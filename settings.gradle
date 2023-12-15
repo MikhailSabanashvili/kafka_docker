@@ -1,0 +1,3 @@
+rootProject.name = 'homework6_1'
+include 'consumer-service'
+include 'producer-service'
