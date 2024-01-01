@@ -15,8 +15,10 @@ public class MessageManager {
 
     @PostMapping
     private String sendMessage(@RequestBody User user){
-        kafkaTemplate.send("transaction-1", user);
+        kafkaTemplate.send("transaction-1", user.toString());
         return "OK";
     }
+
+
 
 }
